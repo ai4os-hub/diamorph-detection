@@ -1,0 +1,37 @@
+{
+    "title": "Diamorph Detection",
+    "summary": "Diamorph object detection",
+    "description": [
+        "diamorph-detection is an application using the DEEPaaS API.\n",
+        "Diamorph object detection"
+    ],
+    "keywords": [
+        "docker",
+        "api-v2"
+    ],
+    "license": "AGPL-3.0-only",
+    "date_creation": "2025-03-18",
+    "sources": {
+        "dockerfile_repo": "https://github.com/ai4os-hub/diamorph-detection",
+        "docker_registry_repo": "ai4oshub/diamorph-detection",
+        "code": "https://github.com/ai4os-hub/diamorph-detection",
+        "ai4_template": "ai4-template-child/2.1.1"
+	},
+    "continuous_integration": {
+        "build_status_badge": "https://jenkins.services.ai4os.eu/buildStatus/icon?job=AI4OS-hub/diamorph-detection/main",
+        "build_status_url": "https://jenkins.services.ai4os.eu/job/AI4OS-hub/job/diamorph-detection/job/main/"
+    },
+    "tosca": [
+        {
+            "title": "Mesos (CPU)",
+            "url": "https://raw.githubusercontent.com/indigo-dc/tosca-templates/master/deep-oc/deep-oc-marathon-webdav.yml",
+            "inputs": [
+                "rclone_conf",
+                "rclone_url",
+                "rclone_vendor",
+                "rclone_user",
+                "rclone_pass"
+            ]
+        }
+    ]
+}
