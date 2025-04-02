@@ -28,6 +28,7 @@ links:
 tags:        # required property, add user-defined tags that you consider relevant
   - deep learning
   - diatoms detection
+  - vo.imagine-ai.eu
 tasks:       # required property, uncomment together with relevant items
   - Computer Vision
   # - Natural Language Processing
