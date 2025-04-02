@@ -9,6 +9,8 @@ description: |-
   labeled data.
 
   This application only provides the inference endpoint.
+
+  <img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/diamorph-detection/main/data/val_batch.jpg'/>
   
 # doi: http://add-some-DOI-url.com
 dates:
