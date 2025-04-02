@@ -1,13 +1,19 @@
 metadata_version: 2.0.0
-title: Diamorph Detection
-summary: "Diamorph object detection"
+title: Diatom detection
+summary: "Diatoms detection with oriented bounding boxes."
 description: |-
   diamorph_detection is an application using the DEEPaaS API.
-  Diamorph object detection
+
+  It is designed to predict oriented bounding boxes around diatoms. 
+  It is based on a pre-trained yolov8 that has been finetuned on manually
+  labeled data.
+
+  This application only provides the inference endpoint.
+  
 # doi: http://add-some-DOI-url.com
 dates:
   created: 2025-03-18
-  updated: 2025-03-18
+  updated: 2025-04-02
 links:
   ai4_template: ai4-template-child/2.1.1
   source_code: https://github.com/ai4os-hub/diamorph-detection
@@ -17,10 +23,11 @@ links:
   # weights: http://add-some-weights-url.com
   # citation: http://add-some-DOI-url.com
   # base_model: http://add-some-link-to-another-model.com
-#tags:        # required property, add user-defined tags that you consider relevant
-  # - deep learning
-#tasks:       # required property, uncomment together with relevant items
-  # - Computer Vision
+tags:        # required property, add user-defined tags that you consider relevant
+  - deep learning
+  - diatoms detection
+tasks:       # required property, uncomment together with relevant items
+  - Computer Vision
   # - Natural Language Processing
   # - Time Series
   # - Recommender Systems
@@ -36,22 +43,22 @@ links:
   # - Transfer Learning
   # - Uncertainty Estimation
   # - Other
-#categories:  # required property, uncomment together with relevant items
+categories:  # required property, uncomment together with relevant items
   # - AI4 trainable
   # - AI4 pre trained
-  # - AI4 inference
+  - AI4 inference
   # - AI4 tools
-#libraries:   # required property, uncomment together with relevant items
+libraries:   # required property, uncomment together with relevant items
   # - TensorFlow
-  # - PyTorch
+  - PyTorch
   # - Keras
   # - Scikit-learn
   # - XGBoost
   # - LightGBM
   # - CatBoost
   # - Other
-#data-type:   # optional, uncomment together with relevant items
-  # - Image
+data-type:   # optional, uncomment together with relevant items
+  - Image
   # - Text
   # - Time Series
   # - Tabular

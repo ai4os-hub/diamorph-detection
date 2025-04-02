@@ -1,9 +1,14 @@
 {
-    "title": "Diamorph Detection",
-    "summary": "Diamorph object detection",
+    "title": "Diatom detection",
+    "summary": "Diatom detection with oriented bounding boxes",
     "description": [
-        "diamorph-detection is an application using the DEEPaaS API.\n",
-        "Diamorph object detection"
+	  "diamorph_detection is an application using the DEEPaaS API. \n",
+	  "\n",
+	  "It is designed to predict oriented bounding boxes around diatoms.  \n",
+	  "It is based on a pre-trained yolov8 that has been finetuned on manually \n",
+	  " labeled data. \n",
+	  "\n",
+	  "This application only provides the inference endpoint. \n"
     ],
     "keywords": [
         "docker",
