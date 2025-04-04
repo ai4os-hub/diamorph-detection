@@ -10,12 +10,27 @@ description: |-
 
   This application only provides the inference endpoint.
 
+
   <img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/diamorph-detection/main/data/val_batch.jpg'/>
   
+  **History and contributors**
+
+  The project was initiated by the PhD of Aishwarya Venkataramanan using YoloV5 working on both detection and classification [1], cosupervized by Cédric Pradalier and Martin Laviale. At that time
+  it was using axis aligned bounding boxes. Later, thanks to the support of PNRIA (Programme National de Recherche en Intelligence Artificielle) and the work
+  of Cyril Regan, the code base was improved, the project was ported to Yolov5 with oriented bounding boxes and a web frontend added [2]. The project was finally ported
+  to the iMagine platform with Yolov8 by Jeremy Fix.
+
+  The database used to train the Yolov8 is Cleurie/Orne, 2788 images, and 9131 instances annotated by Corentin Galinier and Martin Laviale. The running model is a pretrained Yolov8m-obb finetuned on the Cleurie/Orne dataset.
+
+  **References**
+
+  1. Aishwarya Venkataramanan. [Automatic identification of diatoms using deep learning to improve ecological diagnosis of aquatic environments](https://theses.hal.science/tel-04643505). Université de Lorraine, 2023. English.
+  2. [https://www.ins2i.cnrs.fr/fr/diamorph-identification-automatique-des-diatomees-par-apprentissage-profond-partir-dimages](https://www.ins2i.cnrs.fr/fr/diamorph-identification-automatique-des-diatomees-par-apprentissage-profond-partir-dimages)
+
 # doi: http://add-some-DOI-url.com
 dates:
   created: '2025-03-18'
-  updated: '2025-04-02'
+  updated: '2025-04-04'
 links:
   ai4_template: ai4-template-child/2.1.1
   source_code: https://github.com/ai4os-hub/diamorph-detection
