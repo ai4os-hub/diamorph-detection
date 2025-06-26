@@ -1,5 +1,5 @@
 metadata_version: 2.0.0
-title: Diatom detection
+title: Diatom detection with oriented bounding boxes
 summary: "Diatoms detection with oriented bounding boxes."
 description: |-
   diamorph_detection is an application using the DEEPaaS API.
@@ -20,7 +20,7 @@ description: |-
   of Cyril Regan, the code base was improved, the project was ported to Yolov5 with oriented bounding boxes and a web frontend added [2]. The project was finally ported
   to the iMagine platform with Yolov8 by Jeremy Fix.
 
-  The database used to train the Yolov8 is Cleurie/Orne, 2788 images, and 9131 instances annotated by Corentin Galinier and Martin Laviale. The running model is a pretrained Yolov8m-obb finetuned on the Cleurie/Orne dataset.
+  The database used to train the Yolov8 is Cleurie/Orne, 2867 images, and 9822 instances annotated by Corentin Galinier and Martin Laviale. The running model is a pretrained Yolov8m-obb finetuned on the Cleurie/Orne dataset.
 
   **References**
 
@@ -30,7 +30,7 @@ description: |-
 # doi: http://add-some-DOI-url.com
 dates:
   created: '2025-03-18'
-  updated: '2025-04-04'
+  updated: '2025-06-26'
 links:
   ai4_template: ai4-template-child/2.1.1
   source_code: https://github.com/ai4os-hub/diamorph-detection
